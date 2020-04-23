@@ -9,7 +9,6 @@ dockerpath=idreeskun/project-ml-svc
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-# kubectl run --image=$dockerpath udacity-pro-ml --port=80
 kubectl run udacity-ml-svc --generator=run-pod/v1  --image=$dockerpath --port=80 --labels app=udacity-ml-svc
 
 
